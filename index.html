@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador Alura</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="IMG/Logo.svg" alt="logo">
+    </header>
+    <main>
+        <section class="seccion1">
+            <div class="seccion-caja-texto">
+                <textarea placeholder="Ingrese el texto aqui" class="caja-texto"></textarea>
+            </div>
+            <div class="alerta">
+                <img src="IMG/alerta.svg" alt="alerta">
+                <p>Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="botones-encriptar-desencriptar">
+                <input type="button" class="boton-encriptador" value="Encriptar">
+                <input type="button" class="boton-desencriptar" value="Desencriptar">
+            </div>
+        </section>
+        <section class="seccion-respuesta">
+            <div class="munieco">
+                <img src="IMG/Munieco.svg" alt="munieco">
+            </div>
+            <div class="mensaje-contenido-vacio">
+                <h3>Nigún mensaje fue <br> encontrado</h3>
+                <p>Ingresa el texto que desees encriptar o <br> desencriptar.</p>
+            </div>
+            <div class="contenedor-copiar">
+                <input type="button" class="btn-copiar" value="Copiar">
+            </div>
+            <div class="contenedor-resultado">
+                <p class="texto-resultado"></p>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <p class="copyright">&copy; Copyright Proyecto Encriptador - 2024</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
