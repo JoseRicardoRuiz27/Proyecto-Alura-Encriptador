@@ -1,0 +1,318 @@
+/*Para toda la pagina*/
+body{
+    background-color: #F5F5F5;
+}
+
+/*Posicion del Logo Alura*/
+.logo{
+    position: relative;
+    width: 120px;
+    height: 48px;
+    top: 40px;
+    left: 40px;
+}
+
+/*TextArea -Ingrese texto-*/
+.seccion-caja-texto{
+    position: absolute;
+    left: 290px;
+    top: 168px;
+}
+
+/*Ingrese el texto*/
+.caja-texto{
+    position: relative;
+    line-height: 30px;
+    font-size: 32px;
+    padding-right: 350px;
+    padding-top: 48px;
+    padding-bottom: 400px;
+    right: 200px;
+    border: none;
+    background-color: transparent;
+    color: #0A3871;
+    font-weight: 400;
+}
+
+/*Color de las letras del cajatexto*/
+.cajatexto::placeholder{
+    color: #0A3871;
+}
+
+/*IMG-Alerta*/
+.alerta{
+    position: relative;
+    top: 650px;
+    left: 125px;
+    display: flex;
+    color: grey;
+}
+
+
+/*Pocision botones encriptar - desencriptar*/
+.botones-encriptar-desencriptar{
+    position: relative;
+    top: 700px;
+    left: 125px;
+}
+
+.boton-encriptador{
+    width: 328px;
+    height: 67px;
+    background-color: darkblue;
+    border-radius: 24px;
+    padding: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+.boton-desencriptar{
+    background-color: #D8DFE8;
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    border: 1px solid darkblue;
+    border-radius: 24px;
+    color: darkblue;
+    cursor: pointer;
+}
+
+/*Ahora modificamos el visual de la respuesta*/
+.seccion-respuesta{
+    display: block;
+    position: relative;
+    background-color: white;
+    width: 400px;
+    height: 740px;
+    left: 850px;
+    border-radius: 32px;
+    box-sizing: border-box;
+    box-shadow: 0px 24px 32px -8px;
+}
+
+.munieco{
+    position: relative;
+    height: 304px;
+    top: 100px;
+    left: 30px;
+    box-sizing: border-box;
+}
+
+.mensaje-contenido-vacio{
+    position: absolute;
+    top: 440px;
+    left: 30px;
+    width: 336px;
+    height: 122px;
+ }
+
+ .mensaje-contenido-vacio, h3{
+    font-size: 24px;
+    font-weight: 122px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.mensaje-contenido-vacio, p{
+    font-size: 15px;
+    font-weight: 400px;
+    text-align: center;
+    color: grey;
+    padding-top: 20px;
+}
+
+/*Mensaje -resultado encriptado o desencriptado-*/
+.contenedor-resultado{
+    position: absolute;
+    bottom: 200px;
+    width: 320px;
+    height: 450px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor-resultado p{
+    color: #495057;
+    font-size: 25px;
+}
+
+/*Boton de copiar*/
+
+.contenedor-copiar{
+    display: flex;
+    position: absolute;
+    left: 150px;
+    bottom: 400px;
+    top: 650px;
+}
+
+.btn-copiar{
+    position: relative;
+    font-size: 16px;
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    background-color: white;
+    color: darkblue;
+    font-weight: 400;
+    border: 1px solid darkblue;
+    cursor: pointer;
+    right: 100px;
+}
+
+/*Ocultar el munieco para mostrar el resultado
+con Javascript*/
+.ocultar{
+    display: none;
+}
+
+.copyright{
+    text-align: center;
+    color: black;
+    width: 1250px;
+    height: 50px;
+    background: blue;
+    margin-top: 50px;
+}
+/*Responsible*/
+
+@media screen and (max-height: 1174px) {
+    @media (max-width: 769px){
+        .logo{
+            width: 110px;
+            height: 50px;
+            top: 73px;
+            left: 40px;
+        }
+    
+    .alerta{
+        width: 229px;
+        height: 18px;
+        top: 836px;
+        left: 40px;
+    }
+    .botones-encriptar-desencriptar{
+        width: 688px;
+        height: 67px;
+        top: 870px;
+        left: 40px;
+    }
+    .seccion-caja-texto{
+        width: 688px;
+        height: 408px;
+        top: 240px;
+        left: 4px;
+    }
+    .caja-texto{
+        padding: 0;
+        left: 10px;
+        height: 100%;
+    }
+    .seccion-respuesta{
+        width: 688px;
+        height: 165px;
+        top: 1001px;
+        left: 16px;
+        border-radius: 32px;
+        padding: 32px;
+    }
+    .munieco{
+        display: none;
+    }
+    .mensaje-contenido-vacio{
+        display: none;
+    }
+    .contenedor-resultado{
+        width: 730px;
+        height: 300px;
+        top: 300px;
+        left: -5px;
+        border-radius: 32px;
+        padding: 32px;
+        background-color: white;
+   }
+    .contenedor-copiar{
+        display: block;
+        top: 50px;
+        left: 250px;
+    }
+    }
+}
+
+@media screen and (max-height:933px) {
+    @media (max-width: 375px){
+        header{
+            width: 375px;
+            height: 96px;
+        }
+     .logo{
+        padding: 0;
+        width: 32px;
+        height: 48px;
+        top: 24px;
+        left: 16px;
+     }   
+     .seccion-caja-texto{
+        width: 343px;
+        height: 43px;
+        left: 5px;
+     }
+     .caja-texto{
+        padding: 0;
+        position: relative;
+        left: 10px;
+        width: 343px;
+        height: 280px;
+     }
+     .alerta{
+        width: 229px;
+        height: 18px;
+        top: 451px;
+        left: 16px;
+     }
+     .botones-encriptar-desencriptar{
+        width: 343px;
+        height: 158px;
+        top: 508px;
+        left: 16px;
+     }
+     .seccion-respuesta{
+        width: 327px;
+        height: 186px;
+        top: 507px;
+        left: 15px;
+     }
+     .munieco{
+        display: none;
+     }
+     .mensaje-contenido-vacio{
+        width: 327px;
+        height: 186px;
+        top: 1px;
+        left: -20px;
+        border-radius: 32px;
+        padding: 32px;
+    }
+    .contenedor-resultado{
+        width: 315px;
+        height: 505px;
+        top: 196px;
+        left: 5px;
+        padding: 32px;
+        background-color: white;
+    }
+    .contenedor-copiar{
+        display: block;
+        top: 60px;
+        left: 100px;
+    }
+    .ocultar{
+        display: none;
+    }
+    .copyright{
+        width: 375px;
+        height: 50px;
+        margin-top: 1110px;
+    }
+    }
+}
